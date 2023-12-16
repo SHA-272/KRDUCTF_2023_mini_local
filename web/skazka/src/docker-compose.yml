@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build: .
+    container_name: task-web1
+    environment:
+      - FLAG=krdu{kak_t3be_tak0e_A$$man}
+    expose:
+      - 5000
+    networks:
+      ctfnet:
+        ipv4_address: 10.0.0.51
+
+networks:
+  ctfnet:
+    external: true

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  pwn:
+    build: .
+    container_name: task-pwn1
+    ports:
+      - "31337:31337"
+    environment:
+      - FLAG=krdu{0v3rfl0w_1337}
